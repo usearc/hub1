@@ -6,7 +6,7 @@
 
 ---
 
-## What is [hub1](#)
+## What is hub1
 
 hub1 is the first Arc hub release. This first smart assisant is lightweight and developed open-source. It is developed using an esp32 board and more components. Feel free to use the code in this repo, but check out [the license](LICENSE) first
 
