@@ -26,7 +26,7 @@
 
 ## Live demo
 
-View a live demo [here](https://github.com/arc-assistant/hub1/edit/main/.github/README.md).
+View a live demo [here](https://wokwi.com/projects/453294317918432257).
 
 
 ## 🛠️ Hardware
