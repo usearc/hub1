@@ -59,5 +59,5 @@ String lookupInJSON(String input) {
   }
   
   // If no exact match found
-  return "Command: \"" + input + "\"\nTry: hello, time, weather, lights";
+  return "Command: \"" + input + "\"\nThe command was not found...";
 }
