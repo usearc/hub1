@@ -36,6 +36,19 @@ In hub1, we currently use:
 *   **Connectivity:** 2.4GHz Wi-Fi.
 
 
+## Libraries
+
+Libraries needed for hub1 to work:
+
+```text
+Adafruit ILI9341
+Adafruit SSD1306
+XPT2046_Touchscreen
+TFT_eSPI
+ArduinoJson
+```
+
+
 ## 🚀 Quick Start
 
 1.  **Get the Source:** Download the code by clicking [here](https://github.com/arc-assistant/hub1/archive/refs/heads/main.zip).
