@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include "time.h"
+#include "wifi.h"
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_ILI9341.h>
@@ -20,8 +21,6 @@
 #define LED_G 26
 #define LED_B 27
 
-const char* ssid      = "Wokwi-GUEST";
-const char* password  = "";
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 0;
 const int   daylightOffset_sec = 3600;
@@ -30,8 +29,8 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
 // Touch screen without interrupt pin (using polling)
 XPT2046_Touchscreen ts(TOUCH_CS);
 
-String camera_status = "OFF";
-String speaker_status = "OFF";
+int camera_status = 0;
+int speaker_status = 0;
 String output = "Touch the screen to test";
 String version = "0.4.3";
 int loadProgress = 0;
