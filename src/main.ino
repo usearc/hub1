@@ -32,6 +32,7 @@ XPT2046_Touchscreen ts(TOUCH_CS);
 int camera_status = 0;
 int speaker_status = 0;
 String output = "Touch the screen to test";
+int printedOutput = 0;
 String version = "0.4.3";
 int loadProgress = 0;
 unsigned long lastUpdate = 0;
@@ -468,7 +469,11 @@ void loop() {
       output = "Touch: X=" + String(screenX) + ", Y=" + String(screenY);
       output += "\n" + cmdResponse;
       
-      Serial.println(output);
+      if (printedOutput == 0) {
+        Serial.println("\n-- OUTPUT --");
+        Serial.println(output);
+        printedOutput = 1;
+      }
       
       // Update the display immediately
       drawOutputBox();
