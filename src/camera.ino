@@ -4,8 +4,8 @@
 
 
 // WiFi credentials (must match display)
-const char* ssid = "CountyBB-EB0E40";
-const char* password = "2144fb97e3";
+const char* ssid = "your wifi";
+const char* password = "your pasword";
 
 
 // Camera model AI Thinker
