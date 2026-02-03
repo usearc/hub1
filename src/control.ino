@@ -1,5 +1,5 @@
 // Fake user input
-String debugInput = "test";
+String debugInput = "hi";
 
 #include <ArduinoJson.h>
 
