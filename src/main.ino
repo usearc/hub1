@@ -26,9 +26,9 @@ const long  gmtOffset_sec = 0;
 const int   daylightOffset_sec = 3600;
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
-// Touch screen without interrupt pin (using polling)
 XPT2046_Touchscreen ts(TOUCH_CS);
 
+// Global variables
 int camera_status = 0;
 int speaker_status = 0;
 String output = "Touch the screen to test";
@@ -50,7 +50,7 @@ unsigned long lastTouchTime = 0;
 #define ON_COLOR 0x07E0
 #define BOX_COLOR 0xEF5D
 #define OUTPUT_BOX_COLOR 0xF7BE
-#define TOUCH_COLOR 0xF800  // Red for touch feedback
+#define TOUCH_COLOR 0xF800
 
 // Function declarations from control.ino
 extern void setupControl();
@@ -83,13 +83,7 @@ void drawCenteredText(const String &text, int y, int textSize = 1, uint16_t colo
 }
 
 void drawCenteredText(const char* text, int y, int textSize = 1, uint16_t color = TEXT_COLOR) {
-  tft.setTextSize(textSize);
-  tft.setTextColor(color);
-  int16_t x1, y1;
-  uint16_t w, h;
-  tft.getTextBounds(text, 0, 0, &x1, &y1, &w, &h);
-  tft.setCursor((320 - w) / 2, y);
-  tft.print(text);
+  drawCenteredText(String(text), y, textSize, color);
 }
 
 void drawStatusBar() {
@@ -388,16 +382,19 @@ void setup() {
   
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   
+  // SKIP CAMERA INITIALIZATION - Just load to main interface
+  Serial.println("Skipping camera initialization...");
+  
   // Clear screen for main interface
   delay(200);
   tft.fillScreen(BG_COLOR);
   setLED(0, 1, 0); // Green when connected
   
   // Initial output message with command response
-  output = "Touch screen to see command response";
+  output = "System Ready\nTouch screen to test";
   String cmdResponse = getProcessedCommand();
   if (cmdResponse.length() > 0) {
-    output = "Ready!\nCommand: " + cmdResponse;
+    output = "Ready!\n" + cmdResponse;
   }
 }
 
@@ -477,18 +474,6 @@ void loop() {
       
       // Update the display immediately
       drawOutputBox();
-      
-      // Different LED colors based on touch area
-      if (screenY < 100) {
-        // Top area (above time)
-        setLED(1, 0, 0); // Red
-      } else if (screenY >= 160 && screenY <= 230) {
-        // Output box area
-        setLED(0, 0, 1); // Blue
-      } else {
-        // Middle area (time/date area)
-        setLED(0, 1, 0); // Green
-      }
     }
   }
   
