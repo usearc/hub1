@@ -2,9 +2,9 @@
  * ARC HUB v0.8.0 — Live camera feed via WiFi + TJpg_Decoder
  *
  * Required libraries (install via Arduino Library Manager):
- *   - TFT_eSPI  (by Bodmer)
+ *   - TFT_eSPI
  *   - XPT2046_Touchscreen
- *   - TJpg_Decoder  (by Bodmer)  <---- THIS IS THE KEY ONE
+ *   - TJpg_Decoder
  *
  * ESP32-CAM must be running esp32cam_wifi_server.ino on the same network.
  * Update camIP below to match.
@@ -12,10 +12,11 @@
 
 #include <WiFi.h>
 #include "time.h"
+#include "wifi.h"
 #include <SPI.h>
 #include <TFT_eSPI.h>
 #include <XPT2046_Touchscreen.h>
-#include <TJpg_Decoder.h>          // JPEG decoder — renders block-by-block to TFT
+#include <TJpg_Decoder.h>
 #include <HTTPClient.h>
 #include <WiFiClient.h>
 
@@ -32,8 +33,7 @@
 #define LED_B 27
 
 // ─── WiFi / NTP ──────────────────────────────────────────────────────────────
-const char* ssid      = "CountyBB-EB0E40";
-const char* password  = "2144fb97e3";
+// wifi already done in wifi.h
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec      = 0;
 const int   daylightOffset_sec = 3600;
@@ -50,9 +50,9 @@ XPT2046_Touchscreen ts(XPT2046_CS, XPT2046_IRQ);
 // ─── State ───────────────────────────────────────────────────────────────────
 String  output  = "Touch CAM to view camera";
 String  version = "0.8.0";
-unsigned long lastUpdate    = 0;
+unsigned long lastUpdate = 0;
 unsigned long lastTouchTime = 0;
-bool    cameraActive        = false;
+bool cameraActive = false;
 
 // Frame buffer — QVGA JPEG from ESP32-CAM is typically 10-40 KB.
 // 50 KB is plenty of headroom.
