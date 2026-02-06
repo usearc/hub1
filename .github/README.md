@@ -10,7 +10,7 @@
 
   <p>
   <a href="#"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/arc-assistant/hub1" /></a>
-  <a href="LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/arc-assistant/hub1" /></a>
+  <a href="../LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/arc-assistant/hub1" /></a>
   <a href="https://github.com/arc-assistant"><img alt="Creators" src="https://img.shields.io/badge/create_by-Arc-blue" /></a>
   <a href="https://github.com/arc-assistant/hub1/search?l=c%2B%2B"><img alt="Top Language" src="https://img.shields.io/github/languages/top/arc-assistant/hub1?logo=cplusplus" /></a>
   <a href="https://github.com/arc-assistant/hub1/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/arc-assistant/hub1" /></a>
