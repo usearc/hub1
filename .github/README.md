@@ -3,10 +3,10 @@
   <h1>ARC: hub1</h1>
   <p><b>A lightweight, open-source smart assistant powered by ESP32.</b></p>
 
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/arc-assistant/hub1" />
-  <img alt="GitHub License" src="https://img.shields.io/github/license/arc-assistant/hub1" />
-  <img alt="Title" src="https://img.shields.io/badge/arc-hub1-blue" />
-  <img alt="GitHub Issues" src="https://img.shields.io/github/issues/arc-assistant/hub1" />
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/arc-assistant/hub1"                  />
+  <img alt="GitHub License"    src="https://img.shields.io/github/license/arc-assistant/hub1"                />
+  <img alt="Title"             src="https://img.shields.io/badge/arc-hub1-blue"                              />
+  <img alt="Top Language"      src="https://img.shields.io/github/languages/top/arc-assistant/hub1?logo=cplusplus" />
 </div>
 
 ---
