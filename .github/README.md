@@ -3,10 +3,15 @@
   <h1>ARC: hub1</h1>
   <p><b>A lightweight, open-source smart assistant powered by ESP32.</b></p>
 
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/arc-assistant/hub1"                  />
-  <img alt="GitHub License"    src="https://img.shields.io/github/license/arc-assistant/hub1"                />
-  <img alt="Title"             src="https://img.shields.io/badge/arc-hub1-blue"                              />
-  <img alt="Top Language"      src="https://img.shields.io/github/languages/top/arc-assistant/hub1?logo=cplusplus" />
+  
+  <div>
+      <a href="#"><img alt="GitHub Repo stars"      src="https://img.shields.io/github/stars/arc-assistant/hub1"                        /></a>
+      <a href="LICENSE"><img alt="GitHub License"         src="https://img.shields.io/github/license/arc-assistant/hub1"                      /></a>
+      <a href="#"><img alt="Title"                  src="https://img.shields.io/badge/arc-hub1-blue"                                    /></a>
+      <a href="#"><img alt="Top Language"           src="https://img.shields.io/github/languages/top/arc-assistant/hub1?logo=cplusplus" /></a>
+      <a href="#"><img alt="GitHub Release"         src="https://img.shields.io/github/v/release/arc-assistant/hub1"                    /></a>
+      <a href="#"><img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/arc-assistant/hub1"         /></a>
+  </div>
 </div>
 
 ---
@@ -24,7 +29,7 @@
 *   **Extensible:** Easy to integrate with additional sensors and peripherals.
 
 
-## Live demo
+## ▶️ Live demo
 
 View a live demo [here](https://wokwi.com/projects/453294317918432257).
 
