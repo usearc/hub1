@@ -1,17 +1,22 @@
 <div align="center">
-  <a href="https://arc-assistant.onrender.com"><img src="../static/logo-dark.png" width="200px" height="200px" alt="ARC Logo" /></a>
+  
+  <a href="https://arc-assistant.onrender.com">
+    <img src="../static/logo-dark.png" width="200px" height="200px" alt="ARC Logo" />
+  </a>
+  
   <h1>ARC: hub1</h1>
   <p><b>A lightweight, open-source smart assistant powered by ESP32.</b></p>
 
+
+  <p>
+  <a href="#"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/arc-assistant/hub1" /></a>
+  <a href="LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/arc-assistant/hub1" /></a>
+  <a href="https://github.com/arc-assistant"><img alt="Creators" src="https://img.shields.io/badge/create_by-Arc-blue" /></a>
+  <a href="#"><img alt="Top Language" src="https://img.shields.io/github/languages/top/arc-assistant/hub1?logo=cplusplus" /></a>
+  <a href="https://github.com/arc-assistant/hub1/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/arc-assistant/hub1" /></a>
+  <a href="#"><img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/arc-assistant/hub1" /></a>
+  </p>
   
-  <div>
-      <a href="#"><img alt="GitHub Repo stars"      src="https://img.shields.io/github/stars/arc-assistant/hub1"                        /></a>
-      <a href="LICENSE"><img alt="GitHub License"         src="https://img.shields.io/github/license/arc-assistant/hub1"                      /></a>
-      <a href="#"><img alt="Title"                  src="https://img.shields.io/badge/arc-hub1-blue"                                    /></a>
-      <a href="#"><img alt="Top Language"           src="https://img.shields.io/github/languages/top/arc-assistant/hub1?logo=cplusplus" /></a>
-      <a href="#"><img alt="GitHub Release"         src="https://img.shields.io/github/v/release/arc-assistant/hub1"                    /></a>
-      <a href="#"><img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/arc-assistant/hub1"         /></a>
-  </div>
 </div>
 
 ---
@@ -27,6 +32,7 @@
 *   **Lightweight:** Optimized for low-power ESP32 hardware.
 *   **Open Source:** Fully transparent and community-driven.
 *   **Extensible:** Easy to integrate with additional sensors and peripherals.
+
 
 
 ## ▶️ Live demo
